@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        :root{
+            --primary-color:rgb(209, 145, 90);
+            --secondary-color:rgb(212, 193, 177);
+        }
+body{
+    background: var(--secondary-color);
+}
+        nav {
+            background-color:var(--primary-color);
+            /* border-radius: 20px; */
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0px;
+            padding: 10px;
+            list-style-type: none;
+           
+
+        }
+        ul li a{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            font-weight: 700;
+            color:purple;
+            text-decoration: none;
+        }
+
+        ul {
+
+            text-align: end;
+        }
+        .contact{
+            color: blueviolet;
+        }
+    </style>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home </a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Product.html">Product</a></li>
+        </ul>
+    </nav>
+    <h3>Details</h3>
+</head>
+<body>
+    <form action="" class="contact">
+        <div >
+            <label for="Username">Enter Name</label>
+            <input id="user name" type="text" maxlength="20" name="user name" placeholder="Name" >
+        </div>
+        <div>
+            <label for="password">Enter password</label>
+            <input id="password" type="text" maxlength="6" name="password" placeholder="password" >
+        </div>
+        <div>
+            <label for="">Enter mail</label>
+            <input type="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="">Enter contact number</label>
+            <input type="number" >
+        </div>
+        <div>
+            <label for="">Query</label>
+           <input type="text" placeholder="write here">
+        </div>
+    </form>
+</body>
+</html>
